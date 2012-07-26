@@ -5,8 +5,8 @@ Version: 1.1.7
 Date: 2012-06-21
 Author: Kun Liang
 Maintainer: Kun Liang <kliang@stat.wisc.edu>
-Depends: R (>= 2.14.0), edgeR, DESeq
-Suggests: ShortRead
+Depends: R (>= 2.15.0), edgeR, DESeq
+Suggests: ShortRead, BiocGenerics
 Description: DBChIP detects differentially bound sharp binding sites across multiple conditions, with or without matching control samples.
 License: GPL (>= 2)
 LazyLoad: yes
