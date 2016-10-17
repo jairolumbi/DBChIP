@@ -1,0 +1,12 @@
+test_read.binding.site.list <- function(){
+    data("PHA4")
+    conds <- factor(c("emb","emb","L1", "L1"), levels=c("emb", "L1"))
+    
+    bs.list <- read.binding.site.list(binding.site.list)
+    
+    checkTrue(is.list(bs.list))
+    #each chr in each dataset is a data.frame
+    checkTrue(is.data.frame(bs.list[[1]][[1]]))
+    #the example has two fields
+    checkTrue(identical(colnames(bs.list[[1]][[1]]), c("pos", "weight")))
+}
